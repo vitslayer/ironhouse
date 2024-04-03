@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+body {
+    font-family: Nunito, serif;
+    background: linear-gradient(90deg, #0c0296 0%, #451c1c 100%);
+    /* background: linear-gradient(90deg, #0c0296 0%, #eded1e95 100%); */
+}
+
+p{
+    color: rgb(127, 206, 255);
+}
+
+.help{
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: rgb(127, 206, 255);
+}
+
+/* .nav-link.active взять два класса в паре */
+.navbar-nav .nav-link.active {
+    color: rgb(154, 156, 154);
+}
+
+.navbar-brand img {
+    width: 10rem;
+}
+
+.navbar-toggler {
+    background-color: #7269f688
+    
+}
+
+.bg-grey {
+    background-color: rgba(19, 0, 0, 0.735);
+}
+
+.sidebar {
+    color: rgba(128, 176, 250, 0.457);
+    background: linear-gradient(270deg, #0c0296 0%, #451c1c 100%);
+
+}
+
+.card {
+    background: linear-gradient(270deg, #0c0296 0%, #451c1c 100%);
+    color: rgba(0, 255, 255, 0.849);
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgba(0, 255, 255, 0.849);
+}
+
+.footer-text{
+    color: rgba(0, 255, 255, 0.849);
+    margin: auto auto ;
+}
+
+footer, .btn-outline-primary, .btn-outline-danger {
+    background: linear-gradient(270deg, #0c0296 0%, #451c1c 100%);
+    margin: auto auto ;
+}
+
+.media-link{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card:hover img {
+    transition: 1.5s;
+    transform: scale(1.1);
+}
+
+.btnfor p {
+    text-align: center;
+    font-size: 135%;
+}
+
+.centre{
+    margin-top: 10px;
+}
+
+.btn {
+    font-size: 135%;
+}
+
+/* Анимация трубки */
+.call-anim{
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+@media(max-width:511px) {
+    .btnfor p {
+        font-size: 95%;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 100%;
+    }
+
+    .off {
+        display: none;
+    }
+
+    .reclame{
+        text-align: center;
+    }
+
+    .centre{
+        margin-top: 0;
+    }
+
+    .carusel
+    {margin-top: 55px;}
+}

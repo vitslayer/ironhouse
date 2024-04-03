@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gallery</title>
+   <link rel="stylesheet" href="source/styles/galcss.css">
+   
+</head>
+
+<body>
+   <div class="container">
+      <h1>Gallery Iron House</h1>
+      <div class="img-container">
+
+         <div class="img">
+            <img src="source/img-crop/1.jpg" alt="">
+         </div>
+         <div class="img">
+            <img src="source/img-crop/2.jpg" alt="">
+         </div>
+         <div class="img">
+            <img src="source/img-crop/3.jpg" alt="">
+         </div>
+         <div class="img">
+            <img src="source/img-crop/4.jpg" alt="">
+         </div>
+         <div class="img">
+            <img src="source/img-crop/5.jpg" alt="">
+         </div>
+         <div class="img">
+            <img src="source/img-crop/6.jpg" alt="">
+         </div>
+         <div class="img">
+            <img src="source/img-crop/6.jpg" alt="">
+         </div>
+         <div class="img">
+            <img src="source/img-crop/6.jpg" alt="">
+         </div>
+         <!-- всплывающее окно -->
+         <div class="pop-up">
+            <span>&times;</span>
+            <img src="source/img-crop/1.jpg" alt="">
+         </div>
+      </div>
+   </div>
+<script>
+   document.querySelectorAll('.img-container img').forEach(img =>{
+      img.onclick = () => {
+         document.querySelector('.pop-up').style.display = 'block'
+         document.querySelector('.pop-up img').src = img.getAttribute('src')
+      }
+   });
+
+   document.querySelector('.pop-up span').onclick = () =>{
+      document.querySelector('.pop-up').style.display = 'none';
+   }
+</script>
+</body>
+
+
+</html>

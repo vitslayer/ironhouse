@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- добавляем ссылку бутстрапа на css файл на сервере -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- добавляем свой css после бутстрапа -->
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header указывает на шапку с навигационной панелью. копируем код из бустрап -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-grey">
+            <!--bg-body-tertiary очевидно что тот клас задает цветовое оформление нашей наввигационной панели  -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="source/files/logo.png" alt="..."></a>
+                <!-- тег ссылка вложено в надпись Navbar (в img) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav"> <!--вложеный тег список  -->
+                        <li class="nav-item">
+                            <!--  -->
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <!-- класс актив делает темным цветом текст кнопки в навбаре активной страницы -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="pricing.html">Pricing</a>
+                            <!-- указываем ссылку на pricing html. класс disabled делает ссылку неактивной. -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="pricing.html">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">
+                                <img style="width: 28px;margin-inline:0.5em ; " src="source/images/wpp.png" alt="...">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">
+                                <img style="width: 27px;margin-inline:0.5em ; " src="source/images/tg.png" alt="...">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">
+                                <img style="width: 28px;margin-inline:0.5em ; " src="source/images/inst.png" alt="...">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">
+                                <img style="width: 30px;margin-inline:0.5em ; " src="source/images/fb.png" alt="...">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">
+                                <img style="width: 35px;margin-inline:0.5em ; " src="source/images/yt.png" alt="...">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- section указывает основной контент на сайте -->
+    <section>
+        <!-- m-4 то мрджин контеннераа во все 4 стороны  1.5rem-->
+        <div class="container-fluid  ">
+            <div class="row">
+                <div class="col-lg-0">
+                </div>
+                <div class="col-lg-10  col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card">
+                                <a href="gallery1.html" target="_blank"><img src="source/img-crop/4.jpg"
+                                        class="card-img-top" alt="Усадьба"></a>
+                                <div class="card-body">
+
+                                    <h5 class="card-title"><a href="#">Котедж</a></h5>
+                                    <p class="card-text"> <a href="#">Каждая деталь котеджа создана для того, чтобы
+                                            удовлетворить самые изысканные вкусы</a>.</p>
+                                    <a href="https://bakai24.app#00020101021132520011qr.bakai.kg010131016124208000753781712021113021233330009BAKAIBANK0116%D0%9F%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B5204653853034175909BAKAIBANK630431E2"
+                                        class="btn btn-primary">Купить</a>
+                                    <a href="#" class="btn btn-primary">Позвонить</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card">
+                                <a href="gallery1.html" target="_blank"><img src="source/img-crop/5.jpg"
+                                        class="card-img-top" alt="Усадьба"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Вилла</h5>
+                                    <p class="card-text">Загляните в мир безграничного уюта и неповторимого комфорта - в
+                                        мир
+                                        вашей виллы.</p>
+                                    <a href="https://bakai24.app#00020101021132520011qr.bakai.kg010131016124208000753781712021113021233330009BAKAIBANK0116%D0%9F%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D1%80%D1%82%D1%8B5204653853034175909BAKAIBANK630431E2"
+                                        class="btn btn-primary">Купить</a>
+                                    <a href="#" class="btn btn-primary">Позвонить</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card">
+                                <a href="gallery1.html" target="_blank"><img src="source/img-crop/6.jpg"
+                                        class="card-img-top" alt="Усадьба"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Особняк</h5>
+                                    <p class="card-text"> Добро пожаловать в ваш собственный особняк, где роскошь, тепло
+                                        и
+                                        уют в идеальном союзе.</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                    <a href="#" class="btn btn-primary">Позвонить</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card">
+                                <img src="source/img-crop/5.jpg" class="card-img-top" alt="Усадьба">
+                                <div class="card-body">
+                                    <h5 class="card-title">Усадьба</h5>
+                                    <p class="card-text"> Добро пожаловать в ваш собственный особняк, где роскошь, тепло
+                                        и
+                                        уют в идеальном союзе.</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                    <a href="#" class="btn btn-primary">Позвонить</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card">
+                                <img src="source/img-crop/4.jpg" class="card-img-top" alt="Британхаус">
+                                <div class="card-body">
+                                    <h5 class="card-title">Британхаус</h5>
+                                    <p class="card-text"> Добро пожаловать в ваш собственный особняк, где роскошь, тепло
+                                        и
+                                        уют в идеальном союзе.</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                    <a href="#" class="btn btn-primary">Позвонить</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card">
+                                <img src="source/img-crop/3.jpg" class="card-img-top" alt="Лейнхаус">
+                                <div class="card-body">
+                                    <h5 class="card-title">Лейнхаус</h5>
+                                    <p class="card-text"> Добро пожаловать в ваш собственный особняк, где роскошь, тепло
+                                        и
+                                        уют в идеальном союзе.</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                    <a href="#" class="btn btn-primary">Позвонить</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card">
+                                <img src="source/img-crop/2.jpg" class="card-img-top" alt="Вилетта">
+                                <div class="card-body">
+                                    <h5 class="card-title">Вилетта</h5>
+                                    <p class="card-text"> Добро пожаловать в ваш собственный особняк, где роскошь, тепло
+                                        и
+                                        уют в идеальном союзе.</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                    <a href="#" class="btn btn-primary">Позвонить</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card">
+                                <img src="source/img-crop/1.jpg" class="card-img-top" alt="Резиденция">
+                                <div class="card-body">
+                                    <h5 class="card-title">Резиденция</h5>
+                                    <p class="card-text"> Добро пожаловать в ваш собственный особняк, где роскошь, тепло
+                                        и
+                                        уют в идеальном союзе.</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                    <a href="#" class="btn btn-primary">Позвонить</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-4">
+                            <div class="card">
+                                <img src="source/img-crop/8.jpg" class="card-img-top" alt="Дуплекс">
+                                <div class="card-body">
+                                    <h5 class="card-title">Дуплекс</h5>
+                                    <p class="card-text"> Добро пожаловать в ваш собственный особняк, где роскошь, тепло
+                                        и
+                                        уют в идеальном союзе.</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                    <a href="#" class="btn btn-primary">Позвонить</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 my-3">
+                    <div class="row px-2">
+                        <div class="col-lg-12 sidebar my-2">
+                            <p>Тут может быть ваша реклама.
+                                <a href="#">Подробнее >>></a>
+                            </p>
+                        </div>
+                        <div class="col-lg-12  Reclame my-2  px-0 ">
+
+                            <img src="source/Reclame/banner.png" alt="...">
+
+
+                        </div>
+                        <div class="col-lg-12  my-2 px-0">
+                            <img src="source/Reclame/banner.png" alt="">
+                        </div>
+
+                        <div class="col-lg-12 sidebar my-2">
+                            <p>Тут может быть ваша реклама!!!. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eligendi atque quaerat minima officiis veritatis voluptatem.
+                                <a href="#">Подробнее >>></a>
+                            </p>
+                        </div>
+                        <div class="col-lg-12  my-2 px-0">
+                            <img src="source/Reclame/banner.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 footer-text text-center">
+                    <p>All Rights Reserved 2024</p>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-text text-center">
+                    <p>Contacts<br>Job<br>Our Team</p>
+                </div>
+                <div class="col-lg-4 col-md-12 media-link">
+                    <img style="width: 35px;margin-inline:1em ; " src="source/images/tg.png" alt="...">
+                    <img style="width: 40px;margin-inline:1em ; " src="source/images/yt.png" alt="...">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- подключение джава скрипт ссылки от бутстрапа. рекомендуется вконце тега бади.обеспечивает анимации и работу навигац панели и тд -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
