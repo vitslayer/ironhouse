@@ -10,13 +10,13 @@ body {
     background: linear-gradient(180deg, #0c0296 0%, #451c1c 100%);
 }
 
-h1 {
+.container-g >h1 {
     text-align: center;
-color: rgba(239, 237, 250, 0.868);
+    color: rgba(239, 237, 250, 0.868);
 }
 
 
-.container .img-container {
+.container-g .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,14 +25,14 @@ color: rgba(239, 237, 250, 0.868);
 }
 
 
-.container .img-container .img {
-    width: 370px;
-    height: 250px;
+.container-g .img-container .img {
+    width: 390px;
+    height: 290px;
     border: 3px solid rgba(246, 246, 248, 0.532);
     overflow: hidden;
 }
 
-.container .img-container .img img {
+.container-g .img-container .img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -40,44 +40,45 @@ color: rgba(239, 237, 250, 0.868);
     transition: 0.5s;
 }
 
-.container .img-container .img:hover img {
+.container-g .img-container .img:hover img {
     transform: scale(1.1);
 }
 
-.container .pop-up {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, .8);
-display:none;
+.container-g .pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
 }
 
-.container .pop-up img {
-    position:absolute;
+.container-g .pop-up img {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 3px solid rgba(246, 246, 248, 0.532);
-border-radius: 8px;
-width: 600px;
+    border-radius: 8px;
+    width: 600px;
 
 }
+
 /* размещение крестика в пр верх углу */
-.container .pop-up span{
-position: fixed;
-top: 10px;
-right: 20px;
-width: 40px;
-height: 40px;
-background:#fff;
-text-align:center ;
-font-size: 50px;
-font-weight: 900;
-line-height: 40px;
-border-radius: 50%;
-cursor: pointer;
+.container-g .pop-up span {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width:45px;
+    height: 45px;
+    background: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
 
 
 }
